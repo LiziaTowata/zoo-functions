@@ -28,4 +28,12 @@ describe('Testes da função HandlerElephants', () => {
   it('nao passado argumentos a funcao deve retornar', () => {
     expect(handlerElephants()).toEqual(undefined);
   });
+
+  it('passado por argumento um objero vario deve retornar uma string', () => {
+    expect(handlerElephants({})).toEqual('Parâmetro inválido, é necessário uma string');
+  });
+
+  it('passada uma string que nao contempla uma funcionalidade deve retornar um', () => {
+    expect(handlerElephants()).toBe();
+  });
 });
